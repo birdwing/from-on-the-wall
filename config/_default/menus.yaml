@@ -1,0 +1,13 @@
+main:
+- name: Home
+  pageRef: /
+  weight: 1
+- name: About Us
+  pageRef: /aboutus
+  weight: 2
+- name: Posts
+  pageRef: /posts
+  weight: 3
+- name: Tags
+  pageRef: /tags
+  weight: 4
