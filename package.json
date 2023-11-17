@@ -1,0 +1,22 @@
+{
+  "name": "from-on-the-wall",
+  "version": "0.0.1",
+  "description": "From On The Wall Blog using Hugo and Bootstrap 5",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birdwing/from-on-the-wall.git"
+  },
+  "author": "Aron Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/birdwing/from-on-the-wall/issues"
+  },
+  "homepage": "https://github.com/birdwing/from-on-the-wall#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
