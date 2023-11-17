@@ -1,2 +1,7 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="jumbotron text-center">
+	<h1 class="display-4">{{ site.Title }}</h1>
+	<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	<div class="d-flex justify-content-center">
+		{{ partial "main-menu.html" (dict "page" .) }}
+	</div>
+</div>

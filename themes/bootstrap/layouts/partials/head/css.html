@@ -1,9 +1,10 @@
-{{- with resources.Get "css/main.css" }}
+{{ $options := (dict "targetPath" "css/styles.css") }}
+{{- with resources.Get "sass/main.scss" | toCSS $options }}
   {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
+    <link rel="stylesheet" href="{{ .RelPermalink }}" media="screen">
   {{- else }}
     {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" media="screen">
     {{- end }}
   {{- end }}
 {{- end }}
