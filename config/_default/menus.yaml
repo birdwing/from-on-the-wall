@@ -5,8 +5,8 @@ main:
 - name: About Us
   pageRef: /aboutus
   weight: 2
-- name: Posts
-  pageRef: /posts
+- name: Blog
+  pageRef: /blog
   weight: 3
 - name: Tags
   pageRef: /tags
